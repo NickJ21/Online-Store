@@ -7,13 +7,15 @@ function Product(props) {
   }
   return (
     <div className="product">
-      <img src="/images/missing_image.jpg" alt=""></img>
-      <h4>{props.title}</h4>
-      <label>${props.price}</label>
-      <QuantityPicker></QuantityPicker>
-      <button className="btn btn-small btn-primary" onClick={add}>
-        Add
-      </button>
+      <img src={props.data.image} alt=""></img>
+      <h4>{props.data.title}</h4>
+      <label>${props.data.price}</label>
+      <div className="controls">
+        <QuantityPicker></QuantityPicker>
+        <button className="btn btn-small btn-success" onClick={add}>
+          Add
+        </button>
+      </div>
     </div>
   );
 }

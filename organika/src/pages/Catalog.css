@@ -8,3 +8,7 @@
     font-size:24px;
     font-weight: 300;
 }
+
+.catalog .filters button{
+    margin: 6px 4px;
+}
