@@ -1,6 +1,7 @@
 .catalog{
     min-height: 600px;
     background-color: #f5f7f8;
+    margin-top:-350px;
 }
 
 .catalog h1{

@@ -3,7 +3,9 @@ import "./Home.css";
 function Home() {
   return (
     <div className="homepage">
-      <h2>Welcome to Organika Store!</h2>
+      <h2>
+        Welcome to <span className="bold-name"> Organika</span>
+      </h2>
       <p>Your one stop shop for all grocery needs</p>
       <div className="video-background">
         <video autoPlay loop muted>

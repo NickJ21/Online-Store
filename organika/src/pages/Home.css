@@ -1,6 +1,5 @@
 .homepage{
     min-height: 600px;
-    padding: 20px;
 }
 
 .homepage h2{
@@ -20,6 +19,10 @@
     position:absolute;
     top:400px;
     left: 400px;
+}
+.bold-name{
+    font-size: 74px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 .video-background {
     position: relative;
