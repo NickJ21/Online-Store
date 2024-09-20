@@ -1,8 +1,8 @@
 import "./Home.css";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
-    <div className="homepage">
+    <div className="homepage page">
       <h2>
         Welcome to <span className="bold-name"> Organika</span>
       </h2>
@@ -15,6 +15,9 @@ function Home() {
           ></source>
         </video>
       </div>
+      <Link className="btn btn-large btn-primary" to="/catalog">
+        Check our fresh catalog <i class="fa-solid fa-circle-chevron-right"></i>
+      </Link>
     </div>
   );
 }

@@ -1,11 +1,40 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+        <Link className="navbar-brand" to="/">
+          Organika
+        </Link>
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/">
+              <i class="fa-solid fa-seedling"></i> Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/catalog">
+              <i class="fa-solid fa-basket-shopping"></i> Catalog
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/about">
+              <i class="fa-solid fa-address-card"></i> About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/admin">
+              <i class="fa-brands fa-black-tie"></i> Admin
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/contact">
+              <i class="fa-solid fa-address-book"></i> Contact
+            </Link>
+          </li>
+        </ul>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,13 +47,6 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-          </ul>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"

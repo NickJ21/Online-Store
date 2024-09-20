@@ -5,7 +5,9 @@ import { catalog as Products, categories } from "../services/DataService";
 function Catalog() {
   return (
     <div className="catalog">
-      <h1>Our amazing catalog</h1>
+      <h1>
+        <i class="fa-solid fa-basket-shopping"></i> Our amazing catalog
+      </h1>
 
       <div className="filters">
         {categories.map((cat) => (

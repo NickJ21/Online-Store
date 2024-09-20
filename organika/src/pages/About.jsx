@@ -2,9 +2,11 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about page">
       <div className="box">
-        <h1>About Me</h1>
+        <h1>
+          <i class="fa-solid fa-user-astronaut"></i> About Me
+        </h1>
         <h3>Nicholas Johnson</h3>
       </div>
     </div>

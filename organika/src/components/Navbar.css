@@ -1,3 +1,9 @@
 .navbar{
     background-color:rgba(4, 175, 70, 0.623);
 }
+.home .btn i{
+    margin-left:5px;
+}
+.navbar-nav{
+    gap:10px;
+}

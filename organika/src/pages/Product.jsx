@@ -15,7 +15,7 @@ function Product(props) {
       <div className="controls">
         <QuantityPicker></QuantityPicker>
         <button className="btn btn-small btn-success" onClick={add}>
-          Add
+          Add <i class="fa-solid fa-cart-plus"></i>
         </button>
       </div>
     </div>
