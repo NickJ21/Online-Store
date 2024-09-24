@@ -23,7 +23,7 @@ function Contact() {
 
   return (
     <div className="contact page">
-      <h3>Want to Get in Touch?</h3>
+      <h1>Want to Get in Touch?</h1>
       <h5>We love growing with feedback, water us with your thoughts!</h5>
       <div className="form">
         <div>
