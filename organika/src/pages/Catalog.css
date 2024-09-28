@@ -1,6 +1,6 @@
 .catalog{
     min-height: 600px;
-    background-color: #f5f7f8;
+    background-image:linear-gradient(to top, rgb(126, 75, 16), tan) 
 }
 
 .catalog h1{

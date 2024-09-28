@@ -1,5 +1,5 @@
 .product{
-    border:1px solid #333;
+    border:2px solid rgb(216, 160, 87);
     border-radius: 4px;
     padding:10px;
     height:380px;
@@ -16,6 +16,7 @@
 .product img{
     width: 280px;
     height:210px;
+    border-radius:4px;
 }
 .product .controls{
     display:flex;

@@ -1,5 +1,6 @@
 .cart{
     padding-top:20px;
+    background-image:linear-gradient(to top, rgb(126, 75, 16), tan);
 }
 .cart h1{
     color:darkcyan;
@@ -8,4 +9,39 @@
 .cart h4{
     color:#4a4d4c;
     
+}
+.cart .list{
+    padding:4rem;
+}
+.prod-cart{
+    display:flex;
+    border:2px solid rgb(216, 160, 87);
+    border-radius: 4px;
+    padding: 10px;
+    margin:10px;
+    background-color: white;
+    align-items: center;
+}
+.cart .prod-cart img{
+    height:80px;
+}
+.cart .prod-cart h5 {
+    flex: 5;
+}
+
+.cart .prod-cart label {
+    flex: 1;
+}
+
+.cart .prod-cart button {
+    width: 50px;
+}
+.cart .parent{
+    display: flex;
+}
+.cart .list{
+    flex:3;
+}
+.cart .side{
+    flex:1;
 }

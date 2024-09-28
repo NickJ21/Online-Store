@@ -1,5 +1,5 @@
 .navbar{
-    background-color:rgba(4, 175, 70, 0.623);
+    background-image:linear-gradient(to left, green, rgb(186, 241, 55));
 }
 .home .btn i{
     margin-left:5px;

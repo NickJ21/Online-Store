@@ -1,5 +1,6 @@
 .contact .form {
-    border: 1px solid #cecece;
+    border:2px solid rgb(216, 160, 87);
+    background-color: rgb(252, 219, 179);
     border-radius: 4px;
     width: 600px;
     margin-left: auto;
@@ -16,4 +17,7 @@
 }
 .contact h1{
     color:darkcyan;
+}
+.contact{
+    background-image:linear-gradient(to top, rgb(126, 75, 16), tan);
 }

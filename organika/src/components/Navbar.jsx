@@ -4,7 +4,7 @@ import { useContext } from "react";
 import DataContext from "../state/DataContext";
 
 function Navbar() {
-  const user = useContext(DataContext).user;
+  const { user, cart } = useContext(DataContext);
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -41,7 +41,8 @@ function Navbar() {
         </ul>
         <label className="btn btn-outline-light">{user.name}</label>
         <Link className="btn btn-outline-light ms-2" type="submit" to="/cart">
-          View Cart
+          <span className="badge badge-primary"> {cart.length}</span>View Cart
+          <i class="fa-brands fa-opencart"></i>
         </Link>
         <button
           className="navbar-toggler"

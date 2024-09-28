@@ -1,5 +1,5 @@
 .admin{
-    background-color: #e6ede9;
+    background-image:linear-gradient(to top, rgb(126, 75, 16), tan);
     padding-top:40px;
 }
 .admin h1{
@@ -16,11 +16,11 @@
     flex:2;
 }
 .admin .form{
-    border:1px solid #9a9a9b;
+    border:2px solid rgb(216, 160, 87);
+    background-color: rgb(252, 219, 179);
     border-radius: 6px;
     width:400px;
     padding:20px;
-    background-color: white;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -37,4 +37,26 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
     color: #587982;
+}
+.admin .prod {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+}
+
+.admin .prod img {
+    height: 70px;
+}
+
+.admin .prod h5 {
+    flex: 4;
+}
+
+.admin .prod label {
+    flex: 1;
 }
