@@ -1,10 +1,21 @@
 import "./Catalog.css";
 import Product from "./Product";
-import { catalog as Products, categories } from "../services/DataService";
-import { useState } from "react";
+import DataService, { categories } from "../services/DataService";
+import { useEffect, useState } from "react";
 
 function Catalog() {
   const [filter, setFilter] = useState("");
+  const [products, setProducts] = useState([]);
+
+  async function loadData() {
+    let data = await DataService.getProducts();
+    setProducts(data);
+  }
+
+  // when the page loads
+  useEffect(() => {
+    loadData();
+  }, []); // the [] is a dependancy that calls the load data function whenever it changes. It is empty because we only want to call it once, upon loading the page
 
   return (
     <div className="catalog">
@@ -26,11 +37,11 @@ function Catalog() {
         ))}
       </div>
 
-      {Products.filter((prod) => filter == "" || prod.category == filter).map(
-        (prod) => (
+      {products
+        .filter((prod) => filter == "" || prod.category == filter)
+        .map((prod) => (
           <Product data={prod}></Product>
-        )
-      )}
+        ))}
     </div>
   );
 }
